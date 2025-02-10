@@ -4,8 +4,9 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Vaishnavi Patil",
   initials: "VP",
-  url: "https://www.0xsarthak.xyz/",
+  url: "http://localhost:3000/",
   description: "I Code.",
+  work: "Frontend developer",
   summary: `Hey, I'm Vaishnavi
 
 I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I’ve also explored Blender a bit, adding 3D to my creative experiments.
