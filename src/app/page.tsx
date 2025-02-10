@@ -1,14 +1,11 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/ProjectCard"
-import { ResumeCard } from "@/components/ResumeCard";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/app/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { useState } from 'react';
-import { RoughNotation } from "react-rough-notation";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -29,26 +26,17 @@ export default function Page() {
           <div className="gap-2 flex justify-center">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} className="object-cover" />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
-          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5">
+          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5 instrument-serif-regular">
             <BlurFade delay={BLUR_FADE_DELAY} className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none flex items-center gap-3">
-              <div className="font-serif italic main-text-in">I'm</div>
-              <RoughNotation
-                type="box"
-                show={true}
-                strokeWidth={3}
-                animationDuration={400}
-                animationDelay={1000}
-                color="rgb(253 224 71 / 1)"
-              >
-                <span className="font-serif italic main-text-in">
-                  {DATA.name.split(" ")[0]}
-                </span>
-              </RoughNotation>
+              <div className="instrument-serif-regular main-text-in">Vaishnavi</div>
+              <span className="instrument-serif-regular main-text-in">
+                {DATA.name.split(" ")[0]}
+              </span>
             </BlurFade>
           </div>
         </div>
@@ -108,11 +96,11 @@ export default function Page() {
               {showAll ?
                 <div className="text-sm bg-black dark:bg-white flex items-center gap-2 rounded-md px-2 py-0.5 hover:scale-95 transition-all">
                   Show Less
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z" fill="currentColor" fillRule="evenodd" clip-rule="evenodd"></path></svg>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
                 </div> :
                 <div className="text-sm bg-black dark:bg-white flex items-center gap-2 rounded-md px-2 py-0.5 hover:scale-95 transition-all">
                   Show More
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fillRule="evenodd" clip-rule="evenodd"></path></svg>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
                 </div>}
             </button>
           </div>
@@ -129,29 +117,20 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I'm always open to freelance work. If you're interested, feel free to {" "}
-                <RoughNotation
-                  type="highlight"
-                  show={true}
-                  strokeWidth={3}
-                  animationDuration={400}
-                  animationDelay={1000}
-                  color="rgb(253 224 71 / 1)"
+                I am  always open to freelance work. If you are interested, feel free to {" "}
+                <Link
+                  href="mail.to@notsarthakshah@gmail.com"
+                  className="text-black hover:underline"
                 >
-                  <Link
-                    href="mail.to@notsarthakshah@gmail.com"
-                    className="text-black hover:underline"
-                  >
-                    email
-                  </Link>
-                  {" "} /
-                  <Link
-                    href="mail.to@notsarthakshah@gmail.com"
-                    className="text-black hover:underline"
-                  >
-                    dm
-                  </Link>
-                </RoughNotation>
+                  email
+                </Link>
+                {" "} / 
+                <Link
+                  href="mail.to@notsarthakshah@gmail.com"
+                  className="text-black hover:underline"
+                >
+                  dm
+                </Link>
                 {" "} me.
               </p>
             </div>

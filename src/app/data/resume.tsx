@@ -2,7 +2,7 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Vaishnavi Patil",
+  name: "Patil",
   initials: "VP",
   url: "http://localhost:3000/",
   description: "I Code.",
@@ -49,6 +49,12 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
         url: "https://x.com/vai_shhh27",
         icon: Icons.x,
 
+        navbar: true,
+      },
+      gm: {
+        name: "Work",
+        url: "",
+        icon: Icons.work,
         navbar: true,
       },
       email: {
