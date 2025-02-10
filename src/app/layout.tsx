@@ -7,10 +7,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "./data/resume";
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -62,7 +58,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -70,10 +65,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+        </style>
+      </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
-          fontSans.variable
+          "min-h-screen bg-background antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6"
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
