@@ -68,7 +68,7 @@ export default function RootLayout({
       <head>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+          url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
         </style>
       </head>
       <body
