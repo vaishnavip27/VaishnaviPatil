@@ -183,8 +183,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
         },
       ],
       category: "Frontend",
-      image: "/projects/ethmumbai.png",
-      video: "",
+      video: "/space.mp4",
     },
     {
       title: "Twitter Clone",
@@ -202,7 +201,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       ],
       links: [
         {
-          type: "Demo",
+          type: "Website",
           href: "https://twitter-clone-psi-peach.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
@@ -213,7 +212,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
         },
       ],
       category: "Hackathon",
-      image: "/projects/basewave.svg",
+      image: "/twitter.png",
       video: "",
     },
   ],
