@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Inter as FontSans } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "./data/resume";
 import { cn } from "@/lib/utils";

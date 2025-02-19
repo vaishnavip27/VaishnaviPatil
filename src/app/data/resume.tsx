@@ -51,12 +51,6 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
 
         navbar: true,
       },
-      gm: {
-        name: "Work",
-        url: "",
-        icon: Icons.work,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
         url: "#",
