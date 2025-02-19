@@ -28,7 +28,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "notsarthakshah@gmail.com",
+    email: "vaishnavip276@gmail.com",
     social: {
       GitHub: {
         name: "GitHub",
@@ -125,55 +125,60 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/merkle-airdrop",
+          href: "https://github.com/vaishnavip27/WeaveWord",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://weave-word.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
-      category: "Smart-Contract",
+      category: "Game",
       image: "/wordle.png",
       video: "",
     },
     {
-      title: "Task Management",
-      href: "https://task-management-silk-delta.vercel.app/",
+      title: "Zero Gravity landing Page",
+      href: "https://zero-gravity-five.vercel.app/",
       dates: "September 2024",
       active: true,
       description:
-        "Convert effortlessly between AO and Armstrong units. No need to count zeroes.",
-      technologies: ["Next.js", "Typescript", "TailwindCSS", "Arweave", "AO"],
+        "Landing page for Zero Gravity using Spline",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Spline", "Framer Motion"],
       links: [
         {
           type: "Website",
-          href: "https://task-management-silk-delta.vercel.app/",
+          href: "https://zero-gravity-five.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/vaishnavip27/task-management",
+          href: "https://github.com/vaishnavip27/ZeroGravity",
           icon: <Icons.github className="size-3" />,
         },
       ],
       category: "Frontend",
       image: "",
-      video: "/projects/ao-calculator.mp4",
+      video: "/zero-gravity.mp4",
     },
     {
-      title: "Nexus",
-      href: "https://mumbaieth.vercel.app/",
+      title: "Space",
+      href: "https://space-gray-beta.vercel.app/",
       dates: "March 2024",
       active: true,
       description:
-        "A website for EthMumbai with an SVG logo that changes colors based on user preferences and allows users to mint it as a NFT.",
+        "A Parallax landing page built using Framer Motion",
       technologies: ["Next.js", "JavaScript", "TailwindCSS", "Zora"],
       links: [
         {
           type: "Website",
-          href: "https://mumbaieth.vercel.app/",
+          href: "https://space-gray-beta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/eth-mumbai",
+          href: "https://github.com/vaishnavip27/Space",
           icon: <Icons.github className="size-3" />,
         },
       ],
