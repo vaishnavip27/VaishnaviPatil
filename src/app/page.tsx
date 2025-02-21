@@ -7,20 +7,9 @@ import { DATA } from "@/app/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const BLUR_FADE_DELAY = 0.04;
-
-type Props = {
-  description: string;
-  dates: string;
-  image?: string; // Made optional with ?
-  title?: string;
-  href?: string;
-  tags?: string[];
-  video?: string;
-  links?: { name: string; url: string }[];
-  className?: string;
-};
 
 export default function Page() {
   const [showAll, setShowAll] = useState(false);
@@ -31,46 +20,62 @@ export default function Page() {
     setShowAll(!showAll);
   };
 
+  // Updated journey steps to match ProjectCard prop requirements
   const journeySteps = [
     {
       id: 1,
+      title: "Senior Developer",
       description:
         "Led development of a full-stack web application using React and Node.js. Improved application performance by 40% through code optimization and implementing caching strategies.",
-      dates: "2023 - Present",
-      image: "/collgehacka.jpeg", // Replace with your actual image path
+      dates: "february 2024",
+      image: "/collgehacka.jpeg",
+      tags: ["React", "Node.js", "Performance Optimization"],
     },
     {
       id: 2,
+      title: "Frontend Developer",
       description:
         "Developed responsive web interfaces and contributed to the company's design system. Collaborated with UX team to implement user-friendly features.",
-      dates: "2022 - 2023",
+      dates: "March 2024",
       image: "/ttt.jpeg",
+      tags: ["UI/UX", "React", "Design System"],
     },
     {
       id: 3,
+      title: "Education",
       description:
         "Bachelor's in Computer Science with focus on web technologies and software engineering. Graduated with honors.",
-      image : "/tweet.jpeg",
+      dates: "December 2023",
+      image: "/tweet.jpeg",
+      tags: ["Computer Science", "Web Technologies"],
     },
     {
       id: 4,
+      title: "Workshop",
       description:
-        "Bachelor's in Computer Science with focus on web technologies and software engineering. Graduated with honors.",
-      image : "/eth-mumbai.jpg",
+        "Participated in ETH Mumbai hackathon, building decentralized applications on Ethereum.",
+      dates: "March 2024",
+      image: "/eth-mumbai.jpg",
+      tags: ["Ethereum", "Blockchain", "Hackathon"],
     },
     {
       id: 5,
+      title: "Project",
       description:
-        "Bachelor's in Computer Science with focus on web technologies and software engineering. Graduated with honors.",
-      image : "/arweave.jpeg",
+        "Built decentralized applications using Arweave for permanent storage solutions.",
+      dates: "December 2024",
+      image: "/arweave.jpeg",
+      tags: ["Arweave", "Web3", "Decentralized Storage"],
     },
     {
       id: 6,
+      title: "Team Leadership",
       description:
-        "Bachelor's in Computer Science with focus on web technologies and software engineering. Graduated with honors.",
-      image : "/stackheads.jpg",
+        "Led a team of developers in creating innovative solutions for real-world problems.",
+      dates: "Since 2022",
+      image: "/stackheads.jpg",
+      tags: ["Leadership", "Teamwork", "Innovation"],
     },
-    
   ];
 
   return (
@@ -107,7 +112,7 @@ export default function Page() {
       <section id="about">
         <div className="flex min-h-0 pb-5 flex-col justify-center items-center gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <div className="justify-center flex items-center w-32 rounded-lg bg-foreground text-background px-3 py-0.5 text-sm">
+            <div className="justify-center flex items-center rounded-lg bg-foreground text-background px-4 py-1 text-sm">
               About
             </div>
           </BlurFade>
@@ -143,24 +148,28 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {DATA.projects
               .slice(0, showAll ? DATA.projects.length : VISIBLE_PROJECTS)
-              .map((project, id) => (
-                <BlurFade
-                  key={project.title}
-                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-                >
-                  <ProjectCard
-                    href={project.href}
+              .map((project, id) => {
+                // Normalize project data to match ProjectCard props
+                const normalizedProject = {
+                  title: project.title,
+                  href: project.href,
+                  description: project.description,
+                  dates: project.dates || project.Date || "",
+                  tags: project.technologies || [],
+                  image: project.image || undefined,
+                  video: project.video || undefined,
+                  links: project.links || [],
+                };
+
+                return (
+                  <BlurFade
                     key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    dates={project.dates}
-                    tags={project.technologies}
-                    image={project.image}
-                    video={project.video}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
+                    delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  >
+                    <ProjectCard {...normalizedProject} />
+                  </BlurFade>
+                );
+              })}
           </div>
           <div className="flex justify-center mt-4">
             <button
@@ -229,8 +238,10 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 12 + step.id * 0.05}
               >
                 <ProjectCard
+                  title={step.title}
                   description={step.description}
                   dates={step.dates}
+                  tags={step.tags}
                   image={step.image}
                 />
               </BlurFade>
@@ -251,16 +262,20 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 I am always open to freelance work. If you are interested, feel
                 free to{" "}
-                <Link href="" className="text-black hover:underline">
+                <Link
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                  className="text-white hover:underline"
+                >
                   email
                 </Link>{" "}
                 /
-                <Link href="" className="text-black hover:underline">
+                <Link href="" className="text-white hover:underline">
                   dm
                 </Link>{" "}
                 me.
               </p>
             </div>
+            <Button className="mt-5 text-sm h-9 w-32">Book a Call</Button>
           </BlurFade>
         </div>
       </section>

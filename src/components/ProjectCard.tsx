@@ -33,7 +33,7 @@ export function ProjectCard({
   href,
   description,
   dates,
-  tags,
+  tags = [], // Provide empty array as default for tags
   link,
   image,
   video,
