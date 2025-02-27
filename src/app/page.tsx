@@ -259,7 +259,7 @@ export default function Page() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="mt-5 text-sm h-9 w-32">Book a Call</Button>
+              <Button className="mt-5 text-sm h-9 w-32 bg-white text-black rounded-xl hover:bg-gray-500">Book a Call</Button>
             </a>
           </BlurFade>
         </div>
