@@ -73,39 +73,36 @@ export default function Page() {
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
+      <section id="hero" className="mb-5">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-center">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border rounded-xl">
+              <Avatar className="size-32 rounded-xl">
                 <AvatarImage
                   alt={DATA.name}
                   src={DATA.avatarUrl}
-                  className="object-cover"
+                  className="object-cover grayscale"
                 />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
-          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5">
+          <div className="flex-col flex flex-1 justify-center items-center space-y-1">
             <BlurFade
               delay={BLUR_FADE_DELAY}
               className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none flex items-center gap-3"
             >
-              <div className="font-semibold">
-                Vaishnavi
-              </div>
-              <span className="font-semibold">
-                {DATA.name.split(" ")[0]}
-              </span>
+              <div className="font-semibold">{DATA.name.split(" ")[0]}</div>
+              <span className="font-semibold">{DATA.name.split(" ")[1]}</span>
             </BlurFade>
+            <span className="text-2xl">Frontend Developer</span>
           </div>
         </div>
       </section>
       <section id="about">
-        <div className="flex min-h-0 pb-5 flex-col justify-center items-center gap-y-3">
+        <div className="flex min-h-0 pb-8 flex-col justify-center items-center gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <div className="justify-center flex items-center rounded-lg bg-foreground text-background px-4 py-1 text-sm">
+            <div className="justify-center flex items-center rounded-xl bg-foreground bg-white text-black text-background font-semibold px-8 py-1 text-sm">
               About
             </div>
           </BlurFade>
@@ -121,7 +118,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block bg-foreground text-background px-8 py-1 bg-white font-semibold text-black rounded-xl text-sm mb-3">
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -129,11 +126,10 @@ export default function Page() {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from{" "}
-                  <b className="mr-1 dark:text-white text-black">frontend</b>
-                  to <b className="dark:text-white text-black">backend</b> and
-                  even{" "}
-                  <b className="dark:text-white text-black">smart contracts</b>.
-                  Here are a few of my favorites.
+                  <b className="mr-1 text-white">frontend</b>
+                  to <b className="text-white">backend</b> and even{" "}
+                  <b className="text-white">smart contracts</b>. Here are a few
+                  of my favorites.
                 </p>
               </div>
             </div>
@@ -161,12 +157,9 @@ export default function Page() {
               ))}
           </div>
           <div className="flex justify-center mt-4">
-            <button
-              onClick={handleToggle}
-              className="px-4 py-2 text-white dark:text-black"
-            >
+            <button onClick={handleToggle} className="px-4 py-2 text-white">
               {showAll ? (
-                <div className="text-sm bg-black dark:bg-white flex items-center gap-2 rounded-md px-2 py-0.5 hover:scale-95 transition-all">
+                <div className="text-sm bg-white text-black font-semibold flex items-center gap-2 rounded-xl px-8 py-1 hover:scale-95 transition-all">
                   Show Less
                   <svg
                     width="15"
@@ -184,7 +177,7 @@ export default function Page() {
                   </svg>
                 </div>
               ) : (
-                <div className="text-sm bg-black dark:bg-white flex items-center gap-2 rounded-md px-2 py-0.5 hover:scale-95 transition-all">
+                <div className="text-sm bg-white text-black font-semibold flex items-center gap-2 px-7 py-1 rounded-xl hover:scale-95 transition-all">
                   Show More
                   <svg
                     width="15"
@@ -206,12 +199,12 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="journey" className="w-full py-12 bg-black text-white">
+      <section id="journey" className="w-full py-12 bg-[#121212] text-white">
         <div className="space-y-12 max-w-[800px] mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-2 text-center">
               <div className="space-y-1">
-                <div className="inline-block rounded-lg bg-white text-black px-3 py-1 text-sm">
+                <div className="inline-block px-8 py-1 bg-white text-black rounded-xl font-semibold text-sm">
                   My Journey
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl py-2">
@@ -241,12 +234,10 @@ export default function Page() {
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div className="inline-block bg-foreground text-background px-8 py-1 bg-white font-semibold text-black rounded-xl text-sm">
                 Contact
               </div>
-              <h2 className="text-2xl font-bold sm:text-5xl">
-                Get in Touch
-              </h2>
+              <h2 className="text-2xl font-bold sm:text-5xl">Get in Touch</h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 I am always open to freelance work. If you are interested, feel
                 free to{" "}
