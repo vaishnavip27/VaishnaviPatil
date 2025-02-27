@@ -85,22 +85,22 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       //   video: "/projects/solui.mp4",
     },
     {
-      title: "ARIA",
-      href: "https://github.com/vaishnavip27/ARIA",
-      dates: "November 2024",
+      title: "TRENDORIA",
+      href: "https://github.com/vaishnavip27/e-commerce",
+      dates: "February 2025",
       active: true,
       description:
-        "In this project you can execute various Web3-related actions intuitively and efficiently built on AO and Arweave.",
-      technologies: ["Foundry", "Solidity", "Chainlink", "Open Zeppelin"],
+        "An e-commerce store for clothing brand",
+      technologies: ["React.js", "Vite", "TailwindCss", "Typscript"],
       links: [
         {
           type: "Website",
-          href: "https://aria-azure.vercel.app/",
+          href: "https://e-commerce-gray-eight.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/vaishnavip27/ARIA",
+          href: "https://github.com/vaishnavip27/e-commerce",
           icon: <Icons.github className="size-3" />,
         },
       ],

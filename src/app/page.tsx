@@ -263,7 +263,13 @@ export default function Page() {
                 me.
               </p>
             </div>
-            <Button className="mt-5 text-sm h-9 w-32">Book a Call</Button>
+            <a
+              href="https://calendly.com/vaishnavip276/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="mt-5 text-sm h-9 w-32">Book a Call</Button>
+            </a>
           </BlurFade>
         </div>
       </section>
