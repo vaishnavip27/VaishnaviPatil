@@ -77,7 +77,7 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-center">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border rounded-xl">
                 <AvatarImage
                   alt={DATA.name}
                   src={DATA.avatarUrl}
@@ -87,15 +87,15 @@ export default function Page() {
               </Avatar>
             </BlurFade>
           </div>
-          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5 instrument-serif-regular">
+          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5">
             <BlurFade
               delay={BLUR_FADE_DELAY}
               className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none flex items-center gap-3"
             >
-              <div className="instrument-serif-regular main-text-in">
+              <div className="font-semibold">
                 Vaishnavi
               </div>
-              <span className="instrument-serif-regular main-text-in">
+              <span className="font-semibold">
                 {DATA.name.split(" ")[0]}
               </span>
             </BlurFade>
@@ -214,7 +214,7 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-white text-black px-3 py-1 text-sm">
                   My Journey
                 </div>
-                <h2 className="text-3xl font-black tracking-tighter sm:text-5xl instrument-serif-regular py-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl py-2">
                   My Journey
                 </h2>
               </div>
@@ -244,7 +244,7 @@ export default function Page() {
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
-              <h2 className="text-2xl font-extrabold sm:text-5xl instrument-serif-regular">
+              <h2 className="text-2xl font-bold sm:text-5xl">
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
