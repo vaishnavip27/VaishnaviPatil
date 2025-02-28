@@ -30,11 +30,8 @@ const BlurFade = ({
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef<HTMLDivElement | null>(null); 
-  
-  // Use the useInView hook with simplified options
   const inViewResult = useInView(ref, {
     once: true,
-    // Type assertion to bypass TypeScript's type checking
     margin: inViewMargin as any,
   }); 
 
