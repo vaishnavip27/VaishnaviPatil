@@ -9,9 +9,9 @@ export const DATA = {
   work: "Frontend developer",
   summary: `Hey, I'm Vaishnavi
 
-I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I’ve also explored Blender a bit, adding 3D to my creative experiments.
+I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I've also explored Blender a bit, adding 3D to my creative experiments.
 
-Outside of coding, I love doing calligraphy and mandala art. It’s my way of slowing down and creating something meaningful.
+Outside of coding, I love doing calligraphy and mandala art. It's my way of slowing down and creating something meaningful.
 `,
   avatarUrl: "/profile.jpg",
   skills: [
@@ -52,11 +52,11 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
         navbar: true,
       },
 
-      Instagram:{
-        name:"Vaisnavi",
+      Instagram: {
+        name: "Vaisnavi",
         url: "https://www.instagram.com/vai._shhh27?igsh=MW95Z2hmOHRlZDR4aA==",
-        icon:Icons.instagram,
-        navbar:true,
+        icon: Icons.instagram,
+        navbar: true,
       },
       email: {
         name: "Send Email",
@@ -72,7 +72,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       title: "TaskFlow",
       href: "https://kanban-alpha-five.vercel.app/",
       active: true,
-      Date: "15 January, 2025",
+      dates: "15 January, 2025", // Changed from Date to dates
       description: "Effortless task management for every team",
       technologies: ["Next.js", "Typescript", "TailwindCSS"],
       links: [
@@ -89,15 +89,14 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       ],
       category: "Frontend",
       image: "/dashboard-1.png",
-      //   video: "/projects/solui.mp4",
+      video:"",
     },
     {
       title: "TRENDORIA",
       href: "https://github.com/vaishnavip27/e-commerce",
       dates: "February 2025",
       active: true,
-      description:
-        "An e-commerce store for clothing brand",
+      description: "An e-commerce store for clothing brand",
       technologies: ["React.js", "Vite", "TailwindCss", "Typscript"],
       links: [
         {
@@ -121,7 +120,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       dates: "August 2024",
       active: true,
       description:
-        "Wordle on AO is a decentralized word-guessing game built on Arweave’s AO, ensuring transparent and tamper-proof gameplay. Guess the secret word in limited attempts, with every move recorded on-chain!",
+        "Wordle on AO is a decentralized word-guessing game built on Arweave's AO, ensuring transparent and tamper-proof gameplay. Guess the secret word in limited attempts, with every move recorded on-chain!",
       technologies: ["Next.js", "Lua"],
       links: [
         {
@@ -144,9 +143,14 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       href: "https://zero-gravity-five.vercel.app/",
       dates: "September 2024",
       active: true,
-      description:
-        "Landing page for Zero Gravity using Spline",
-      technologies: ["Next.js", "Typescript", "TailwindCSS", "Spline", "Framer Motion"],
+      description: "Landing page for Zero Gravity using Spline",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Spline",
+        "Framer Motion",
+      ],
       links: [
         {
           type: "Website",
@@ -168,8 +172,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       href: "https://space-gray-beta.vercel.app/",
       dates: "March 2024",
       active: true,
-      description:
-        "A Parallax landing page built using Framer Motion",
+      description: "A Parallax landing page built using Framer Motion",
       technologies: ["Next.js", "JavaScript", "TailwindCSS", "Zora"],
       links: [
         {
@@ -185,6 +188,7 @@ Outside of coding, I love doing calligraphy and mandala art. It’s my way of sl
       ],
       category: "Frontend",
       video: "/space.mp4",
+      image : "",
     },
     {
       title: "Twitter Clone",
