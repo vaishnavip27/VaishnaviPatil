@@ -111,8 +111,8 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
         },
       ],
       category: "Smart-Contract",
-      image: "",
-      video: "/aria.mp4",
+      image: "/eth-mumbai.jpg",
+      video: "",
     },
     {
       title: "Weave Word",
@@ -164,8 +164,8 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
         },
       ],
       category: "Frontend",
-      image: "",
-      video: "/zero-gravity.mp4",
+      image: "/twitter.png",
+      video: "",
     },
     {
       title: "Space",
@@ -187,8 +187,8 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
         },
       ],
       category: "Frontend",
-      video: "/space.mp4",
-      image : "",
+      video: "",
+      image : "/tweet.jpeg",
     },
     {
       title: "Twitter Clone",
