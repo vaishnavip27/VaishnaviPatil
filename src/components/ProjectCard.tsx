@@ -87,7 +87,7 @@ export function ProjectCard({
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-1 py-1 text-[10px] rounded-lg"
+                className="custom-get-started-button px-3 py-0.5 text-[10px] rounded-xl"
                 variant="secondary"
                 key={tag}
               >

@@ -100,9 +100,9 @@ export default function Page() {
         </div>
       </section>
       <section id="about">
-        <div className="flex min-h-0 pb-8 flex-col justify-center items-center gap-y-3">
+        <div className="flex pb-8 flex-col justify-center items-center gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <div className="justify-center flex items-center rounded-xl bg-foreground bg-white text-black text-background font-semibold px-8 py-1 text-sm">
+            <div className="custom-get-started-button justify-center flex items-center rounded-xl bg-foreground bg-white text-black text-background font-semibold px-8 py-2 text-sm">
               About
             </div>
           </BlurFade>
@@ -117,8 +117,8 @@ export default function Page() {
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block bg-foreground text-background px-8 py-1 bg-white font-semibold text-black rounded-xl text-sm mb-3">
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="custom-get-started-button w-44 justify-center flex items-center px-8 py-2 bg-white font-semibold text-black rounded-xl text-sm mb-3">
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -159,7 +159,7 @@ export default function Page() {
           <div className="flex justify-center mt-4">
             <button onClick={handleToggle} className="px-4 py-2 text-white">
               {showAll ? (
-                <div className="text-sm bg-white text-black font-semibold flex items-center gap-2 rounded-xl px-8 py-1 hover:scale-95 transition-all">
+                <div className="custom-get-started-button text-sm bg-white text-black font-semibold flex items-center gap-2 rounded-xl px-8 py-2 hover:scale-95 transition-all">
                   Show Less
                   <svg
                     width="15"
@@ -177,7 +177,7 @@ export default function Page() {
                   </svg>
                 </div>
               ) : (
-                <div className="text-sm bg-white text-black font-semibold flex items-center gap-2 px-7 py-1 rounded-xl hover:scale-95 transition-all">
+                <div className=" custom-get-started-button text-sm bg-white text-black font-semibold flex items-center gap-2 px-7 py-2 rounded-xl hover:scale-95 transition-all">
                   Show More
                   <svg
                     width="15"
@@ -203,8 +203,8 @@ export default function Page() {
         <div className="space-y-12 max-w-[800px] mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-2 text-center">
-              <div className="space-y-1">
-                <div className="inline-block px-8 py-1 bg-white text-black rounded-xl font-semibold text-sm">
+              <div className="space-y-1 flex flex-col items-center">
+                <div className=" custom-get-started-button w-40 px-8 py-2 bg-white text-black rounded-xl font-semibold text-sm">
                   My Journey
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl py-2">
@@ -231,14 +231,14 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="flex items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block bg-foreground text-background px-8 py-1 bg-white font-semibold text-black rounded-xl text-sm">
+            <div className="space-y-3 flex flex-col items-center justify-center">
+              <div className="custom-get-started-button bg-foreground text-background w-28 px-8 py-2 bg-white font-semibold text-black rounded-xl text-sm">
                 Contact
               </div>
               <h2 className="text-2xl font-bold sm:text-5xl">Get in Touch</h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
                 I am always open to freelance work. If you are interested, feel
                 free to{" "}
                 <Link
@@ -253,14 +253,16 @@ export default function Page() {
                 </Link>{" "}
                 me.
               </p>
+              <a
+                href="https://calendly.com/vaishnavip276/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="custom-get-started-button mt-12 text-sm h-12 w-44 bg-white text-black rounded-xl hover:bg-gray-500 ">
+                  Book a Call
+                </Button>
+              </a>
             </div>
-            <a
-              href="https://calendly.com/vaishnavip276/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="mt-5 text-sm h-9 w-32 bg-white text-black rounded-xl hover:bg-gray-500">Book a Call</Button>
-            </a>
           </BlurFade>
         </div>
       </section>
