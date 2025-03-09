@@ -197,13 +197,11 @@ export const DATA = {
       dates: "May 2024",
       active: true,
       description:
-        "Frictionless, Decentralized Recurring Payments for Builders on Base built at Onchain Summer [FBI]",
+        "A normal twitter clone built using HTML, CSS and JavaScript",
       technologies: [
-        "Next.js",
-        "TypeScript",
-        "Hardhat",
-        "JavaScript",
-        "TailwindCSS",
+        "HTML",
+        "CSS",
+        "JavsScript",
       ],
       links: [
         {

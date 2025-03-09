@@ -22,7 +22,7 @@ export function JourneyCard({ title, description, dates, imageUrl }: Props) {
         </div>
       </CardHeader>
       <CardContent className="px-4">
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <p className="text-xs text-slate-200">{description}</p>
       </CardContent>
     </Card>
   );

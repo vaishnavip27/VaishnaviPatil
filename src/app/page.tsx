@@ -23,49 +23,49 @@ export default function Page() {
   const journeySteps = [
     {
       id: 1,
-      title: "Senior Developer",
+      title: "Illuminati 2023",
       description:
-        "Led development of a full-stack web application using React and Node.js. Improved application performance by 40% through code optimization and implementing caching strategies.",
+        "Secured 2nd prize at Illuminati 2024 hackathon, collaborating with team members during an intense 24-hour competition. Valuable learning experience with guidance from faculty mentors.",
       dates: "february 2024",
       imageUrl: "/collgehacka.jpeg",
     },
     {
       id: 2,
-      title: "Frontend Developer",
+      title: "Arweave Cohort-3",
       description:
-        "Developed responsive web interfaces and contributed to the company's design system. Collaborated with UX team to implement user-friendly features.",
-      dates: "March 2024",
+        "Selected among 20 developers nationwide to collaborate on ARIA, a Web3 assistant simplifying blockchain interactions. Gained hands-on experience in decentralized tech while working with an incredible community of builders.",
+      dates: "December 2024",
       imageUrl: "/arweave.jpeg",
     },
     {
       id: 3,
-      title: "Education",
+      title: "Frontend Fiesta",
       description:
-        "Bachelor's in Computer Science with focus on web technologies and software engineering. Graduated with honors.",
-      dates: "December 2023",
+        "Thrilled to be among the top 4 in this intense coding challenge! Built a dynamic, responsive website under time constraints—an incredible experience that boosted my skills and confidence.",
+      dates: "March 2024",
       imageUrl: "/ttt.jpeg",
     },
     {
       id: 4,
-      title: "Workshop",
+      title: "First talk on generative AI",
       description:
-        "Participated in ETH Mumbai hackathon, building decentralized applications on Ethereum.",
-      dates: "March 2024",
+        "Spoke to 10th & 12th graders about Generative AI—its impact and how to leverage it in daily life. Their curiosity and enthusiasm made it an unforgettable experience!",
+      dates: "February 2024",
       imageUrl: "/tweet.jpeg",
     },
     {
       id: 5,
-      title: "Project",
+      title: "Eth Mumbai",
       description:
-        "Built decentralized applications using Arweave for permanent storage solutions.",
-      dates: "December 2024",
+        "Attended my first web-3 hackathon in Mumbai and coded for 3 days stright",
+      dates: "March 2024",
       imageUrl: "/eth-mumbai.jpg",
     },
     {
       id: 6,
-      title: "Team Leadership",
+      title: "Member, Stackheads Community",
       description:
-        "Led a team of developers in creating innovative solutions for real-world problems.",
+        "Organized workshops to help students explore development and emerging tech, fostering a collaborative learning environment.",
       dates: "Since 2022",
       imageUrl: "/stackheads.jpg",
     },
