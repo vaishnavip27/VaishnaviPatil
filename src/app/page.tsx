@@ -125,11 +125,11 @@ export default function Page() {
                   Recent Work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from{" "}
-                  <b className="mr-1 text-white">frontend</b>
-                  to <b className="text-white">backend</b> and even{" "}
-                  <b className="text-white">smart contracts</b>. Here are a few
-                  of my favorites.
+                  I&apos;ve worked on a variety of projects, focusing on{" "}
+                  <b className="mr-1 text-white">frontend development</b>,{" "}
+                  <b className="text-white">UI/UX design</b>, and{" "}
+                  <b className="text-white">interactive experiences</b>. Here
+                  are a few of my favorites.
                 </p>
               </div>
             </div>
@@ -244,11 +244,10 @@ export default function Page() {
                 free to{" "}
                 <Link
                   href="mailto:vaishnavip276@gmail.com"
-                  className="text-white decoration-underline"
+                  className="text-purple-500 decoration-underline underline"
                 >
                   email
-                </Link>
-                {" "}
+                </Link>{" "}
                 me.
               </p>
               <a
