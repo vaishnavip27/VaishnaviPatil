@@ -9,10 +9,11 @@ export const DATA = {
   work: "Frontend developer",
   summary: `Hey, I'm Vaishnavi
 
-I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I've also explored Blender a bit, adding 3D to my creative experiments.
-
-Outside of coding, I love doing calligraphy and mandala art. It's my way of slowing down and creating something meaningful.
-`,
+  I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I've also explored Blender a bit, adding 3D to my creative experiments.
+  
+  
+  Outside of coding, I love doing calligraphy and mandala art. It's my way of slowing down and creating something meaningful.
+  `,
   avatarUrl: "/profile.jpg",
   skills: [
     "React",
@@ -89,7 +90,7 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
       ],
       category: "Frontend",
       image: "/dashboard-1.png",
-      video:"",
+      video: "",
     },
     {
       title: "TRENDORIA",
@@ -101,17 +102,17 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
       links: [
         {
           type: "Website",
-          href: "https://e-commerce-gray-eight.vercel.app/",
+          href: "https://github.com/vaishnavip27/Trendoria",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/vaishnavip27/e-commerce",
+          href: "https://trendoria.vercel.app/",
           icon: <Icons.github className="size-3" />,
         },
       ],
       category: "Smart-Contract",
-      image: "/eth-mumbai.jpg",
+      image: "/trendoria.png",
       video: "",
     },
     {
@@ -120,7 +121,7 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
       dates: "August 2024",
       active: true,
       description:
-        "Wordle on AO is a decentralized word-guessing game built on Arweave's AO, ensuring transparent and tamper-proof gameplay. Guess the secret word in limited attempts, with every move recorded on-chain!",
+        "Weave Word is Wordle on AO is a decentralized word-guessing game built on Arweave's AO",
       technologies: ["Next.js", "Lua"],
       links: [
         {
@@ -164,7 +165,7 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
         },
       ],
       category: "Frontend",
-      image: "/twitter.png",
+      image: "/zero-gravity.png",
       video: "",
     },
     {
@@ -188,7 +189,7 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
       ],
       category: "Frontend",
       video: "",
-      image : "/tweet.jpeg",
+      image: "/space.png",
     },
     {
       title: "Twitter Clone",

@@ -143,6 +143,7 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                 >
                   <ProjectCard
+                    className="object-cover"
                     href={project.href}
                     key={project.title}
                     title={project.title}
