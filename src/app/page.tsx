@@ -243,15 +243,12 @@ export default function Page() {
                 I am always open to freelance work. If you are interested, feel
                 free to{" "}
                 <Link
-                  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-                  className="text-white hover:underline"
+                  href="mailto:vaishnavip276@gmail.com"
+                  className="text-white decoration-underline"
                 >
                   email
-                </Link>{" "}
-                /
-                <Link href="" className="text-white hover:underline">
-                  dm
-                </Link>{" "}
+                </Link>
+                {" "}
                 me.
               </p>
               <a

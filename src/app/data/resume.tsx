@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon} from "lucide-react";
 
 export const DATA = {
   name: "Vaishnavi Patil",
@@ -26,7 +26,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "vaishnavip276@gmail.com",
@@ -42,6 +41,13 @@ export const DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/vaishnavi-patil27/",
         icon: Icons.linkedin,
+
+        navbar: true,
+      },
+      Email: {
+        name: "Email",
+        url: "mailto:vaishnavip276@gmail.com",
+        icon: Icons.email,
 
         navbar: true,
       },
@@ -92,7 +98,7 @@ export const DATA = {
       image: "/dashboard-1.png",
       video: "",
     },
-    {
+    { 
       title: "TRENDORIA",
       href: "https://github.com/vaishnavip27/e-commerce",
       dates: "February 2025",
