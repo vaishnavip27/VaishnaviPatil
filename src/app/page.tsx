@@ -27,7 +27,7 @@ export default function Page() {
       description:
         "Secured 2nd prize at Illuminati 2024 hackathon, collaborating with team members during an intense 24-hour competition. Valuable learning experience with guidance from faculty mentors.",
       dates: "february 2024",
-      imageUrl: "/collgehacka.jpeg",
+      imageUrl: "/collgehacka.png",
     },
     {
       id: 2,
