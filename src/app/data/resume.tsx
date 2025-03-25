@@ -77,7 +77,7 @@ export const DATA = {
   projects: [
     {
       title: "TaskFlow",
-      href: "https://kanban-alpha-five.vercel.app/",
+      href: "https://kanban-lyart-zeta.vercel.app/",
       active: true,
       dates: "15 January, 2025", // Changed from Date to dates
       description: "Effortless task management for every team",
@@ -85,7 +85,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://kanban-alpha-five.vercel.app/",
+          href: "https://kanban-lyart-zeta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
