@@ -200,6 +200,29 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="w-full bg-[#121212] text-white py-8 flex flex-col items-center">
+        <div className="relative flex flex-col items-center">
+          <div className="custom-get-started-button w-40 px-8 py-2 mb-3 bg-white text-black rounded-xl font-semibold text-sm">
+            Art of Motion
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold tracking-tighter mb-5">
+            My Interactive Canvas
+          </h1>
+          <span className="italic text-xl text-center mb-8">
+            I enjoy bringing UI to life with animations. Here’s a showcase of my
+            animated components
+          </span>
+          <Link href="https://frames-by-vaish.vercel.app/">
+            <span className="bg-white text-black font-bold px-20 py-3 text-xl rounded-xl tracking-tighter cursor-pointer">
+              Frames by Vaish
+            </span>
+          </Link>
+        </div>
+      </section>
+
       <section id="journey" className="w-full py-12 bg-[#121212] text-white">
         <div className="space-y-12 max-w-[800px] mx-auto">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
