@@ -108,12 +108,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://github.com/vaishnavip27/Trendoria",
+          href: "https://trendoria.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://trendoria.vercel.app/",
+          href: "https://github.com/vaishnavip27/Trendoria",
           icon: <Icons.github className="size-3" />,
         },
       ],
