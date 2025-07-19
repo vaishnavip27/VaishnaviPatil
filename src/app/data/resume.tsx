@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon} from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Vaishnavi Patil",
@@ -7,12 +7,11 @@ export const DATA = {
   url: "http://localhost:3000/",
   description: "I Code.",
   work: "Frontend developer",
-  summary: `Hey, I'm Vaishnavi
+  summary: `
 
-  I'm a frontend developer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I've also explored Blender a bit, adding 3D to my creative experiments.
-  
-  
-  Outside of coding, I love doing calligraphy and mandala art. It's my way of slowing down and creating something meaningful.
+I'm a frontend developer and designer who loves building beautiful and interactive UIs. Animating things is my favorite part—I enjoy making designs come to life. I've also explored Blender a bit, adding 3D to my creative experiments.
+
+Outside of coding, I love doing calligraphy and mandala art. It's my way of slowing down and creating something meaningful.
   `,
   avatarUrl: "/profile.jpg",
   skills: [
@@ -24,9 +23,7 @@ export const DATA = {
     "Solidity",
     "Databases",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "vaishnavip276@gmail.com",
     social: {
@@ -76,10 +73,33 @@ export const DATA = {
 
   projects: [
     {
+      title: "SOLRPC",
+      href: "https://solrpc.vercel.app/",
+      active: true,
+      dates: "15 January, 2025",
+      description: "Effortless task management for every team",
+      technologies: ["Next.js", "Typescript", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://solrpc.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/vaishnavip27/solrpc",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      category: "Frontend",
+      image: "/solrpc.png",
+      video: "",
+    },
+    {
       title: "TaskFlow",
       href: "https://kanban-lyart-zeta.vercel.app/",
       active: true,
-      dates: "15 January, 2025", // Changed from Date to dates
+      dates: "15 January, 2025",
       description: "Effortless task management for every team",
       technologies: ["Next.js", "Typescript", "TailwindCSS"],
       links: [
@@ -98,7 +118,7 @@ export const DATA = {
       image: "/dashboard-1.png",
       video: "",
     },
-    { 
+    {
       title: "TRENDORIA",
       href: "https://github.com/vaishnavip27/e-commerce",
       dates: "February 2025",
@@ -119,30 +139,6 @@ export const DATA = {
       ],
       category: "Smart-Contract",
       image: "/trendoria.png",
-      video: "",
-    },
-    {
-      title: "Weave Word",
-      href: "https://github.com/vaishnavip27/WeaveWord",
-      dates: "August 2024",
-      active: true,
-      description:
-        "Weave Word is Wordle on AO is a decentralized word-guessing game built on Arweave's AO",
-      technologies: ["Next.js", "Lua"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/vaishnavip27/WeaveWord",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://weave-word.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      category: "Game",
-      image: "/wordle.png",
       video: "",
     },
     {
@@ -204,11 +200,7 @@ export const DATA = {
       active: true,
       description:
         "A normal twitter clone built using HTML, CSS and JavaScript",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavsScript",
-      ],
+      technologies: ["HTML", "CSS", "JavsScript"],
       links: [
         {
           type: "Website",
