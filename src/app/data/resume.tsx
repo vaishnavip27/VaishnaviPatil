@@ -76,8 +76,8 @@ Outside of coding, I love doing calligraphy and mandala art. It's my way of slow
       title: "SOLRPC",
       href: "https://solrpc.vercel.app/",
       active: true,
-      dates: "15 January, 2025",
-      description: "Effortless task management for every team",
+      dates: "April, 2025",
+      description: "RPC Aggregator for Solana",
       technologies: ["Next.js", "Typescript", "TailwindCSS"],
       links: [
         {
